@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tablaCalculadora {
+    width: 100%;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+.tablaCalculadora td {
+    width: 10%;
+    height: 10%;
+    border: 1px solid #ccc;
+    text-align: right;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.tablaCalculadora button {
+    width: 100%; 
+    height: 100%;
+    font-size: 4vw;
+}
+
+/* Estilos para los botones de operación */
+.operacion {
+    background-color: #f2f2f2; /* Fondo original para los botones de operadores */
+    font-weight: bold;
+}
+
+.operacion button {
+    background-color: #888; /* Cambio el fondo a un gris más oscuro para los botones de operadores */
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+
+}
+
+
+.tablaCalculadora button[data-key="NP"],
+.tablaCalculadora button[data-key="R"] {
+    background-color: #77a9d2; /* Color azul suave para los paréntesis */
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+}
+
+.tablaCalculadora button[data-key="%"] {
+    background-color: #ffa500; /* Color naranja para el signo de porcentaje */
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+}
+
+.tablaCalculadora button[data-key="C"] {
+    background-color: #f1580c; /* Color rojo oscuro para el botón 'C' */
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+}
+
+.tablaCalculadora button[data-key="DEL"] {
+    background-color: #1d1c1c; 
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+}
+
+.tablaCalculadora button[data-key="="] {
+    background-color: #226b23; /* Color verde oscuro para el signo igual */
+    color: #fff; /* Cambio el color del texto a blanco para que resalte */
+}
+
+/* Estilos para la pantalla */
+.screen {
+    background-color: #779c77; /* Color de fondo verde para simular una pantalla vintage */
+    color: #fff; /* Color del texto en la pantalla */
+    font-size: 12vw; /* Tamaño de fuente más grande para la pantalla */
+    padding: 60px;
+    height: 40px; /* Ajustamos la altura de la pantalla */
+    text-align: right; /* Centrar el número horizontalmente */
+    font-family: 'Roboto Mono', monospace; /* Usar una fuente que simule los números digitales */
+    display: flex; /* Utilizar flexbox para centrar verticalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: flex-end; /* Justificar el número a la derecha */
+    font-family: 'Digital-7 Mono', monospace; /* Utiliza la fuente "Digital-7 Mono" para la pantalla */
+}
+
+#NombreCarnet {
+    color: #00ff00;
+    text-align: center;
+    text-shadow: 2px 1px 4px #313131;
+    height: 10px;
+    font-size:3dvw;
+    font-family: 'Digital-7 Mono', monospace; /* Utiliza la fuente "Digital-7 Mono" para la pantalla */
+    background-color: black;
+}

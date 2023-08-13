@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Responsiva</title>
+    <!-- Referencia al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrego el estilo de la fuente -->
+    <style>
+        @font-face {
+            font-family: 'Digital-7 Mono';
+            src: url('digital-7.ttf') format('truetype');
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tablaCalculadora"> <!-- Tabla general para celdas de botones -->
+        <tr>
+            <td colspan="4">
+                <div class="screen">0</div> <!-- Pantalla o Display -->
+            </td>
+        </tr>
+            <tr>
+                    <td colspan="4" id="NombreCarnet">
+                        Luis Alberto Mendez, 3190-08-21188
+                        <!-- Barra de Información -->
+                    </td>
+            </tr>
+        <tr>
+            <!-- Estructura de Botones -->
+            <td><button data-key="C">C</button></td>
+            <td><button data-key="NP">&#8723</button></td>
+            <td><button data-key="R">&#8730</button></td>
+            <td><button data-key="DEL">&#8678</button></td>
+        </tr>
+        <tr>
+            <td><button data-key="1">1</button></td>
+            <td><button data-key="2">2</button></td>
+            <td><button data-key="3">3</button></td>
+            <td class="operacion"><button data-key="+">+</button></td>
+        </tr>
+        <tr>
+            <td><button data-key="4">4</button></td>
+            <td><button data-key="5">5</button></td>
+            <td><button data-key="6">6</button></td>
+            <td class="operacion"><button data-key="-">-</button></td>
+        </tr>
+        <tr>
+            <td><button data-key="7">7</button></td>
+            <td><button data-key="8">8</button></td>
+            <td><button data-key="9">9</button></td>
+            <td class="operacion"><button data-key="*">*</button></td>
+        </tr>
+        <tr>
+            <td><button data-key="0">0</button></td>
+            <td><button data-key=".">.</button></td>
+            <td><button data-key="=">=</button></td>
+            <td class="operacion"><button data-key="/">/</button></td>
+        </tr>
+    </table>
+</body>
+<!-- Referencia al archivo de JavaScript -->
+<script src="script.js"></script>
+</html>
